@@ -1,0 +1,6 @@
+.frame { position: relative; overflow: hidden; }
+.image { object-fit: cover; object-position: var(--image-position, center); }
+.frame[data-shape="double-oval"] {
+  mask-image: radial-gradient(ellipse 50% 33% at 50% 33%, #000 99.8%, transparent 100%), radial-gradient(ellipse 50% 33% at 50% 67%, #000 99.8%, transparent 100%);
+  mask-repeat: no-repeat;
+}

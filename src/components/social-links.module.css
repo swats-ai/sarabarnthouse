@@ -1,0 +1,5 @@
+.links { display: flex; align-items: center; gap: 1vw; }
+.links a, .links svg { display: block; width: 20px; height: 20px; }
+.links a:hover { opacity: .8; }
+.links[data-size="large"] { gap: 15px; }
+.links[data-size="large"] a, .links[data-size="large"] svg { width: 25px; height: 25px; }

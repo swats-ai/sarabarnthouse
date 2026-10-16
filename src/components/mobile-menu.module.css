@@ -1,0 +1,12 @@
+.toggle, .close { position: relative; width: 50px; height: 37px; cursor: pointer; color: inherit; }
+.toggle span, .close span { position: absolute; left: 9px; top: 12.5px; width: 35px; height: 1px; background: currentColor; }
+.toggle span + span { top: 23.5px; }
+.dialog { position: fixed; inset: 0; width: 100vw; max-width: none; height: 100dvh; max-height: none; padding: 6vw; margin: 0; border: 0; background: var(--color-background); color: white; }
+.dialog::backdrop { background: var(--color-background); }
+.menuHeader { display: flex; justify-content: space-between; align-items: center; min-height: 37px; }
+.close span { width: 28px; left: 12.5px; top: 18px; transform: rotate(45deg); }
+.close span + span { transform: rotate(-45deg); }
+.homeLink { position: absolute; top: calc(50% + 3vw - 9px); left: 50%; transform: translate(-50%, -50%); font-size: 8.5vw; line-height: 1; }
+.social { position: absolute; left: 50%; bottom: calc(15px + 6vw); transform: translateX(-50%); }
+@media (min-width: 800px) { .toggle { display: none; } }
+@media (pointer: coarse) and (max-width: 1024px) { .toggle { display: block; } }

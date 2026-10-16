@@ -1,0 +1,14 @@
+.section { padding: calc(var(--header-height) + 6.6vmax + 35px) 0 calc(35px + 3vw); background: white; color: var(--color-ink); }
+.container { width: 88%; max-width: var(--content-max-width); margin-inline: auto; }
+.introRow { display: grid; gap: 46px; }
+.introduction { text-align: center; }
+.portrait { min-height: 269px; }
+.biography { margin-top: 11px; }
+@media (min-width: 768px) {
+  .section { min-height: calc(var(--header-height) + 6.6vmax + min(calc(38.399vw + 198px), 1244px) + 3vw); padding-top: calc(var(--header-height) + 6.6vmax); padding-bottom: calc(5.021vw + 36.7px); }
+  .container { width: 94%; }
+  .introRow { grid-template-columns: minmax(0, 45.4%) minmax(0, 41.2%); column-gap: 5%; align-items: stretch; }
+  .introduction { padding-top: calc(2.021vw + 11px); }
+  .portrait { min-height: min(calc(20.21vw + 99px), 650px); }
+  .biography { width: 53.8%; margin-top: calc(4.042vw + 33px); margin-left: 42%; }
+}

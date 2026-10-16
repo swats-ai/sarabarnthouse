@@ -1,0 +1,15 @@
+.header { position: absolute; inset: 0 0 auto; z-index: 10; padding: 6vw; color: white; background: linear-gradient(var(--color-ink), transparent); }
+.inner { display: flex; align-items: center; justify-content: space-between; min-height: 37px; }
+.title { font-family: var(--font-display), serif; font-style: italic; font-size: var(--brand-size); line-height: 1.2; letter-spacing: -.02em; }
+.desktopNav { display: none; align-items: center; gap: 2.5vw; }
+.homeLink { font-size: min(calc(1rem + 1.56vw), 55.936px); line-height: 1.5; padding-block: .1em; }
+.skipLink { position: absolute; top: -100px; left: 16px; background: white; color: var(--color-ink); padding: 12px; z-index: 20; }
+.skipLink:focus { top: 8px; }
+@media (min-width: 800px) {
+  .header { padding: 2.8vw 3vw; }
+  .desktopNav { display: flex; }
+}
+@media (pointer: coarse) and (max-width: 1024px) {
+  .header { padding: 6vw; }
+  .desktopNav { display: none; }
+}

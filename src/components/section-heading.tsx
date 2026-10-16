@@ -1,0 +1,11 @@
+import { Reveal } from "./reveal";
+import type { ReactNode } from "react";
+
+interface SectionHeadingProps {
+  children: ReactNode;
+  id?: string;
+}
+
+export function SectionHeading({ children, id }: SectionHeadingProps) {
+  return <Reveal effect="scale"><h2 id={id}>{children}</h2></Reveal>;
+}

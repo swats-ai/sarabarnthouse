@@ -1,0 +1,10 @@
+.reveal {
+  transition: opacity .65s ease .16s, transform .65s ease .16s;
+}
+
+.reveal:where([data-visible="false"]) { opacity: 0; }
+.reveal:where([data-visible="false"][data-effect="scale"]) { transform: scale(.9); }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
